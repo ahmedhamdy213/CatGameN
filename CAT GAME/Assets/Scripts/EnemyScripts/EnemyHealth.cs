@@ -16,11 +16,11 @@ public class EnemyHealth : MonoBehaviour
 
     public void TakeDamage(int Damage)
     {
-        
+        CurrentHealth -= Damage;
 
         if (CurrentHealth <= 0)
         {
-            Invoke("Die", 2);
+            Invoke("Die",1);
         }
     }
 
